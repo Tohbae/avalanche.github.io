@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+html, body {
+  width: auto;
+  height: auto;
+  font-family: "Poppins"; 
+  justify-content: center;
+}
+
+@media screen and (max-width: 1000px){
+body{
+  width: 50%;
+}
+}
+@media screen and (max-width: 600px) and (min-width: 400px) {
+body{
+  width: 100%;
+  background-color: green;
+}
+}
+
+  body{
+    background-image: url("../bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%) 
+  } 
+.rows{
+  display: flex;
+  flex-wrap: wrap;
+}
+.left{
+  color: white;
+  position: absolute;
+  width: 40%;
+  transform: translate(25%,90%);
+  flex: 30%;
+}
+.right{
+  box-sizing: border-box;
+  flex: 70%;
+  transform: translate(130%,15%);
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  float: right;
+}
+.left h1{
+  font-size: 40px;
+  font-weight: 700;
+}
+.left p{
+  font-size: 16px;
+}
+.try{
+  background-color: hsl(248, 32%, 49%);
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 .4rem hsla(249, 10%, 26%, .25);
+  padding: 5px;
+  margin: 5%;
+  width: auto;
+}
+.try p{
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  padding: 5px;
+}
+.try span{
+  font-weight: 600;
+}
+.form{
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 .4rem hsla(249, 10%, 26%, .25);
+  width: auto;
+  padding: 5px;
+  margin: 5%;
+}
+.fname input{
+  width: 80%;
+  height: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  margin-top: 40px;
+  margin-left: 25px;
+  margin-right: 0px;
+  padding-left: 20px;
+}
+
+.lname input{
+  width: 80%;
+  height: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  margin-left: 25px;
+  padding-left: 20px;
+}
+.email input{
+  width: 80%;
+  height: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  margin-left: 25px;
+  padding-left: 20px;
+}
+#email input{
+  width: 80%;
+  height: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  margin-left: 25px;
+  padding-left: 20px;
+}
+.password input{
+  width: 80%;
+  height: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  padding-left: 20px;
+  margin-left: 25px;
+}
+.submit input{
+  width: 87%;
+  left: 5%;
+  height: 45px;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 3px;
+  margin-left: 25px;
+  color: white;
+  background-color: hsl(154, 59%, 51%);
+   font-family: "Poppins";
+  border: 0px;
+}
+.form p{
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  color: hsl(246, 25%, 77%);
+  padding: 5px;
+  margin-top: 20px;
+}
+.form span{
+  color: hsl(0, 100%, 74%);
+}
+#error-fname, #error-lname, #error-email, #error-password{
+  margin-bottom: .5rem;
+  font-style: italic;
+  transition: all .35s;
+  text-align: right;
+  margin-right: 45px;
+  color: red;
+}
+.input-control.error input{
+  border: 1px solid #ff3860;
+}
+.input-control .error{
+  color: #ff3860;
+  font-size: 9px;
+}
+.error{
+  background: url('icon-error.svg') no-repeat 94%;
+  border: 2px solid var(--red);
+  transition: all .35s;
+  position: relative;
+}
